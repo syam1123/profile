@@ -4,6 +4,7 @@ import React from 'react'
 
 import './assets/global-styles'
 import AppRoutes from './routes'
+import { browserHistory } from 'helpers' 
 
 const containerEl = document.getElementById('profileApp')
 
