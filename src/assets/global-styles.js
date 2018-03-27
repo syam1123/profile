@@ -33,6 +33,8 @@ injectGlobal`
     --primary-font: Avenir;
     --white: #ffffff;
     --cobalt: #0a385c;
+    --silver: silver;
+    --dark-grey: #444444;
   }
 
   html,

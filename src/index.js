@@ -4,14 +4,18 @@ import React from 'react'
 
 import './assets/global-styles'
 import AppRoutes from './routes'
-import { browserHistory } from 'helpers' 
+import { browserHistory } from 'helpers'
+import { TopNavBar } from 'components'
 
 const containerEl = document.getElementById('profileApp')
 
 const render = Component => ReactDOM.render(
-  <AppContainer>
-    <Component history={browserHistory} />
-  </AppContainer>
+  <div>
+    <TopNavBar />
+    <AppContainer>
+      <Component history={browserHistory} />
+    </AppContainer>
+  </div>
 , containerEl)
 
 render(AppRoutes)

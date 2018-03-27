@@ -18,6 +18,7 @@ const AppRoutes = () => (
   <Router>
     <RouteWrapper>
       <Route path='/' component={AppContainer} />
+      <Route path='/skills' component={AppContainer} />
     </RouteWrapper>
   </Router>
 )

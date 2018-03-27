@@ -22,8 +22,13 @@ const TopLogoContainer = styled.div`
   justify-content: center;
   width: 100vw;
   background: white;
-  min-height: 50%;
-  height: 20vh;
+  min-height: 100vh;
+  transition: all ease-in .25s;
+  &.true{
+    max-height: 20vh;
+    min-height: 20vh;
+    transition: all ease-in .25s;
+  }
 `
 
 const BottomContent = styled.div`
@@ -43,11 +48,11 @@ const BottomContent = styled.div`
     .designation{
       margin-bottom: 2em;
       margin-top: .5em;
-      color: silver;
+      color: var(--silver);
       font-weight: 300;
     }
     .additional-details{
-      color: silver;
+      color: var(--silver);
       font-family: lato;
       p{
         margin: 5px 2px;
@@ -70,10 +75,22 @@ const BottomContent = styled.div`
 `
 
 class MainContainer extends Component {
+
+  constructor () {
+    super ();
+    this.state = {"pageLoaded": false};
+  }
+
+  componentDidMount() {
+    console.log("did mount");
+    this.setState({"pageLoaded": true})
+  }
+
   render () {
+    console.log("this.state.pageLoaded", this.state.pageLoaded);
     return (
       <MainPageContainer>
-        <TopLogoContainer>
+        <TopLogoContainer className={this.state.pageLoaded}>
           <img src={GlobalImages.logo} alt="" />
         </TopLogoContainer>
         <BottomContent>

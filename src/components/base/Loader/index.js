@@ -5,15 +5,15 @@ import GlobalImages from '../../../assets/global-images'
 
 const Loader = (props) => {
 	return (
-		<RippleContainer {...props}>
-		</RippleContainer>
+		<LoaderContainer {...props}>
+			<img src={GlobalImages.logo} alt="" />
+		</LoaderContainer>
 	)
 }
-const RippleContainer = styled.div`
+const LoaderContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url(GlobalImages.logo);
 	width: 100vw;
 	height: 100vh;
 	background: orange;
