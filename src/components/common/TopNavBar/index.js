@@ -90,7 +90,7 @@ class TopNavBar extends Component{
       case ProfileRoutes.VISION_ROUTE:
         return 'vision-active'
       default:
-        return 'home-active'
+        return ''
     }
   }
 
@@ -111,7 +111,7 @@ class TopNavBar extends Component{
         this.setState({pathsTravelled: pathsTravelled+1});
         break;
       default:
-        history.push(ProfileRoutes.HOME_ROUTE);
+        history.push('/404');
         this.setState({pathsTravelled: pathsTravelled+1});
         break;
     }

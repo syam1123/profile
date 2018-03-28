@@ -1,7 +1,8 @@
 import {
   Router,
   Route,
-  Switch
+  Switch,
+  Redirect
 } from 'react-router-dom'
 
 
@@ -27,12 +28,23 @@ const VisionContainer = Loadable({
   loading: Loader
 })
 
+const PageNotAvailable = Loadable({
+  loader: () => import('./PageNotAvailable' /* webpackChunkName: 'page404' */),
+  loading: Loader
+})
+
 const AppRoutes = () => (
   <Router history={browserHistory}>
     <RouteWrapper>
-      <Route exact path={ProfileRoutes.HOME_ROUTE} component={HomeContainer} />
-      <Route  path={ProfileRoutes.SKILLS_ROUTE} component={SkillsContainer} />
-      <Route  path={ProfileRoutes.VISION_ROUTE} component={VisionContainer} />
+      <Switch>
+        <Route exact path={ProfileRoutes.HOME_ROUTE} component={HomeContainer} />
+        <Route  path={ProfileRoutes.SKILLS_ROUTE} component={SkillsContainer} />
+        <Route  path={ProfileRoutes.VISION_ROUTE} component={VisionContainer} />
+
+
+        <Route path='/404' component={PageNotAvailable} />
+        <Redirect from='*' to='/404' />
+      </Switch>
     </RouteWrapper>
   </Router>
 )
