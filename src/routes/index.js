@@ -22,11 +22,17 @@ const SkillsContainer = Loadable({
   loading: Loader
 })
 
+const VisionContainer = Loadable({
+  loader: () => import('./VisionContainer' /* webpackChunkName: 'visions' */),
+  loading: Loader
+})
+
 const AppRoutes = () => (
   <Router history={browserHistory}>
     <RouteWrapper>
       <Route exact path={ProfileRoutes.HOME_ROUTE} component={HomeContainer} />
       <Route  path={ProfileRoutes.SKILLS_ROUTE} component={SkillsContainer} />
+      <Route  path={ProfileRoutes.VISION_ROUTE} component={VisionContainer} />
     </RouteWrapper>
   </Router>
 )

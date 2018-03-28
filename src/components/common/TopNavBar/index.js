@@ -106,6 +106,10 @@ class TopNavBar extends Component{
         history.push(ProfileRoutes.SKILLS_ROUTE);
         this.setState({pathsTravelled: pathsTravelled+1});
         break;
+      case 2:
+        history.push(ProfileRoutes.VISION_ROUTE);
+        this.setState({pathsTravelled: pathsTravelled+1});
+        break;
       default:
         history.push(ProfileRoutes.HOME_ROUTE);
         this.setState({pathsTravelled: pathsTravelled+1});
@@ -122,7 +126,7 @@ class TopNavBar extends Component{
             <span className="skills" onClick={() => this.proceedTo(1)}>Skills</span>
           </LeftNavs>
           <RightNavs className="nav-links">
-            <span className="vision">Vison</span>
+            <span className="vision" onClick={() => this.proceedTo(2)}>Vison</span>
           </RightNavs>
         </NavSection>
       </NavBarContainer>
