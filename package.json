@@ -14,9 +14,7 @@
   },
   "repository": "git@github.com:syam1123/profile.git",
   "author": "Syam S Pillai <syam.sp0965@gmail.com> (https://github.com/syam1123)",
-  "contributors": [
-
-  ],
+  "contributors": [],
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.0",
