@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { browserHistory } from 'helpers'
 
@@ -14,7 +15,6 @@ const NavBarContainer = styled.div`
 const NavSection = styled.div`
   max-width: 1100px;
   margin: auto;
-  width: 1100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,16 +48,21 @@ const RightNavs = styled.div`
 
 class TopNavBar extends Component{
 
+  static contextTypes = {
+    router: PropTypes.object
+  }
+
   proceedTo (page) {
+    const {history} = this.props;
     switch (page) {
       case 0:
-        browserHistory.push('/');
+        history.push('/');
         break;
       case 1:
-        browserHistory.push('/skills');
+        history.push('/skills');
         break;
       default:
-        browserHistory.push('/');
+        history.push('/');
         break;
     }
   }

@@ -11,7 +11,7 @@ const containerEl = document.getElementById('profileApp')
 
 const render = Component => ReactDOM.render(
   <div>
-    <TopNavBar />
+    <TopNavBar history={browserHistory} />
     <AppContainer>
       <Component history={browserHistory} />
     </AppContainer>

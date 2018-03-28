@@ -74,7 +74,7 @@ const BottomContent = styled.div`
   }
 `
 
-class MainContainer extends Component {
+class HomeContainer extends Component {
 
   constructor () {
     super ();
@@ -82,12 +82,10 @@ class MainContainer extends Component {
   }
 
   componentDidMount() {
-    console.log("did mount");
     this.setState({"pageLoaded": true})
   }
 
   render () {
-    console.log("this.state.pageLoaded", this.state.pageLoaded);
     return (
       <MainPageContainer>
         <TopLogoContainer className={this.state.pageLoaded}>
@@ -119,7 +117,7 @@ class MainContainer extends Component {
   }
 }
 
-MainContainer.propTypes = propTypes;
-MainContainer.defaultProps = defaultProps;
+HomeContainer.propTypes = propTypes;
+HomeContainer.defaultProps = defaultProps;
 
-export default MainContainer;
+export default HomeContainer;
