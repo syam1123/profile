@@ -35,11 +35,12 @@ injectGlobal`
     --cobalt: #0a385c;
     --silver: silver;
     --dark-grey: #444444;
+    --gray: #959595;
+    --light-gray: #efefef;
   }
 
   html,
   body {
-    height: 100%;
     width: 100%;
     margin: 0;
   }

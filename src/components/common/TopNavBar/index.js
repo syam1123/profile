@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { browserHistory } from 'helpers'
+import { browserHistory, ProfileRoutes } from 'helpers'
 
 const propTypes = {}
 const defaultProps = {}
@@ -10,10 +10,37 @@ const NavBarContainer = styled.div`
   position: absolute;
   height: 50px;
   width: 100vw;
+  top: 0;
+  box-shadow: 0px 0px 10px 1px #f5f5f5;
+  &.home-active{
+    box-shadow: none;
+    .nav-links{
+      span{
+        color: white;
+        &:hover{
+          border-bottom: 1px solid var(--white);
+        }
+      }
+    }
+    .home{
+      border-bottom: 1px solid var(--white);
+    }
+  }
+  &.skills-active{
+    .skills{
+      border-bottom: 1px solid var(--dark-grey);
+    }
+  }
+  &.vision-active{
+    .vision{
+      border-bottom: 1px solid var(--dark-grey);
+    }
+  }
 `
 
 const NavSection = styled.div`
   max-width: 1100px;
+  width: 95%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -48,35 +75,54 @@ const RightNavs = styled.div`
 
 class TopNavBar extends Component{
 
-  static contextTypes = {
-    router: PropTypes.object
+  constructor () {
+    super ();
+    this.state = {"pathsTravelled": 0}
+  }
+
+  getClassName () {
+    const { history } = this.props;
+    switch (history.location.pathname) {
+      case ProfileRoutes.HOME_ROUTE:
+        return 'home-active'
+      case ProfileRoutes.SKILLS_ROUTE:
+        return 'skills-active'
+      case ProfileRoutes.VISION_ROUTE:
+        return 'vision-active'
+      default:
+        return 'home-active'
+    }
   }
 
   proceedTo (page) {
     const {history} = this.props;
+    const {pathsTravelled} = this.state;
     switch (page) {
       case 0:
-        history.push('/');
+        history.push(ProfileRoutes.HOME_ROUTE);
+        this.setState({pathsTravelled: pathsTravelled+1});
         break;
       case 1:
-        history.push('/skills');
+        history.push(ProfileRoutes.SKILLS_ROUTE);
+        this.setState({pathsTravelled: pathsTravelled+1});
         break;
       default:
-        history.push('/');
+        history.push(ProfileRoutes.HOME_ROUTE);
+        this.setState({pathsTravelled: pathsTravelled+1});
         break;
     }
   }
 
   render () {
     return (
-      <NavBarContainer>
+      <NavBarContainer className={this.getClassName()}>
         <NavSection>
           <LeftNavs className="nav-links">
-            <span onClick={() => this.proceedTo(0)}>Home</span>
-            <span onClick={() => this.proceedTo(1)}>Skills</span>
+            <span className="home" onClick={() => this.proceedTo(0)}>Home</span>
+            <span className="skills" onClick={() => this.proceedTo(1)}>Skills</span>
           </LeftNavs>
           <RightNavs className="nav-links">
-            <span>Vison</span>
+            <span className="vision">Vison</span>
           </RightNavs>
         </NavSection>
       </NavBarContainer>

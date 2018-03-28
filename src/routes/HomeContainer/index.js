@@ -14,26 +14,30 @@ const defaultProps = {
 const MainPageContainer = styled.div`
   width: 100vw;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cobalt);
 `
 
 const TopLogoContainer = styled.div`
-  display: flex;
+  ${'' /* display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
-  background: white;
+  background: var(--cobalt);
   min-height: 100vh;
   transition: all ease-in .25s;
   &.true{
-    max-height: 20vh;
     min-height: 20vh;
     transition: all ease-in .25s;
-  }
+  } */}
 `
 
 const BottomContent = styled.div`
   background-color: var(--cobalt);
-  height: 80vh;
+  ${'' /* height: 80vh; */}
   font-family: avenir;
   .primary-details {
     text-align: center;

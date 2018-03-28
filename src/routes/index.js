@@ -8,7 +8,7 @@ import {
 import React from 'react'
 import Loadable from 'react-loadable'
 import styled from 'styled-components'
-import { browserHistory } from 'helpers'
+import { browserHistory, ProfileRoutes } from 'helpers'
 
 import { Loader } from 'components'
 
@@ -25,8 +25,8 @@ const SkillsContainer = Loadable({
 const AppRoutes = () => (
   <Router history={browserHistory}>
     <RouteWrapper>
-      <Route exact path='/' component={HomeContainer} />
-      <Route  path='/skills' component={SkillsContainer} />
+      <Route exact path={ProfileRoutes.HOME_ROUTE} component={HomeContainer} />
+      <Route  path={ProfileRoutes.SKILLS_ROUTE} component={SkillsContainer} />
     </RouteWrapper>
   </Router>
 )
