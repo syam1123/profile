@@ -4,3 +4,4 @@ build-prod
 build-dev
 styleguide
 .DS_Store
+firebase-debug.log

@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "syam-pillai"
+    "default": "syam-pillai",
+    "production": "syam-pillai"
   }
 }
