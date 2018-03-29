@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { browserHistory, ProfileRoutes } from 'helpers'
 
+import { GlobalImages } from "assets";
+
 const propTypes = {}
 const defaultProps = {}
 
@@ -49,10 +51,10 @@ const NavSection = styled.div`
   .nav-links{
     display: flex;
     align-items: center;
-    justify-content: center;
     font-size: .9em;
     font-family: avenir;
     font-weight: 400;
+    justify-content: left;
     span{
       margin: 0px 1em;
       cursor: pointer;
@@ -65,8 +67,17 @@ const NavSection = styled.div`
   }
 `
 
-const LeftNavs = styled.div`
+const LogoImage = styled.img`
+  width: 35px;
+  margin-right: 1em;
+  cursor: pointer;
+  ${props => props.parentClass == "home-active" && css`
+    filter: brightness(0) invert(100%);
+  ` }
+`
 
+const LeftNavs = styled.div`
+  flex: 1;
 `
 const RightNavs = styled.div`
 
@@ -121,12 +132,18 @@ class TopNavBar extends Component{
     return (
       <NavBarContainer className={this.getClassName()}>
         <NavSection>
+          <LogoImage
+            src={GlobalImages.logo_small}
+            alt="logo image"
+            parentClass={this.getClassName()}
+            onClick={() => this.proceedTo(0)}
+          />
           <LeftNavs className="nav-links">
             <span className="home" onClick={() => this.proceedTo(0)}>Home</span>
             <span className="skills" onClick={() => this.proceedTo(1)}>Skills</span>
           </LeftNavs>
           <RightNavs className="nav-links">
-            <span className="vision" onClick={() => this.proceedTo(2)}>Vison</span>
+            <span className="vision" onClick={() => this.proceedTo(2)}>Vision</span>
           </RightNavs>
         </NavSection>
       </NavBarContainer>

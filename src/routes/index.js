@@ -4,6 +4,7 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom'
+import * as OfflinePluginRuntime from 'offline-plugin/runtime';
 
 
 import React from 'react'
@@ -48,6 +49,8 @@ const AppRoutes = () => (
     </RouteWrapper>
   </Router>
 )
+
+OfflinePluginRuntime.install();
 
 const RouteWrapper = styled.div`
   height: inherit;

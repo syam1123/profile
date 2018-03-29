@@ -47,6 +47,15 @@ const GrowthIndicator = styled.div`
 
 class BarIndicator extends Component {
 
+  constructor () {
+    super();
+    this.state = {'mounted': false}
+  }
+
+  comoponentDidMount () {
+
+  }
+
   getRandomNumberInRange () {
     return Math.floor(Math.random() * 7);
   }

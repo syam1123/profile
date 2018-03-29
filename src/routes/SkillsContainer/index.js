@@ -109,11 +109,11 @@ class SkillsContainer extends Component {
     return otherInterests.map((value, key) => {
       if (!value.link) {
         return (
-          <span>{value.skill}</span>
+          <span key={key}>{value.skill}</span>
         )
       }
       return (
-        <a href={value.link} target="_blank">{value.skill}</a>
+        <a href={value.link} rel="noopener" target="_blank" key={key}>{value.skill}</a>
       )
     })
   }

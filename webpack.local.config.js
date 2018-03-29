@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const package = require('./package.json');
+const OfflinePlugin = require('offline-plugin');
 
 const __DEV__ = process.env.NODE_ENV !== 'production';
 
@@ -96,6 +97,26 @@ module.exports = {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
       },
     }),
+    new OfflinePlugin({
+      publicPath: '/',
+      caches: {
+        main: [
+          'vendor.*.js',
+          '*.png',
+          '*.otf'
+        ]
+      },
+      responseStrategy: 'cache-first',
+      ServiceWorker: {
+        navigateFallbackURL: '/',
+        cacheName: 'syam-pillai-main' // do not change this. It will leave the old cache in browser for ever
+      },
+      AppCache: {
+        FALLBACK: {
+          '/': '/offline-page.html'
+        }
+      }
+    })
   ],
 
   resolve: {

@@ -22,22 +22,12 @@ const MainPageContainer = styled.div`
 `
 
 const TopLogoContainer = styled.div`
-  ${'' /* display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  background: var(--cobalt);
-  min-height: 100vh;
-  transition: all ease-in .25s;
-  &.true{
-    min-height: 20vh;
-    transition: all ease-in .25s;
-  } */}
+  img{
+    filter: brightness(0) invert(100%);
+  }
 `
 
 const BottomContent = styled.div`
-  background-color: var(--cobalt);
-  ${'' /* height: 80vh; */}
   font-family: avenir;
   .primary-details {
     text-align: center;
@@ -66,13 +56,20 @@ const BottomContent = styled.div`
     }
   }
   .public-links{
+    margin-top: 1em;
+    a{
+      margin: 1em .2em;
+    }
     img{
       filter: brightness(0) invert(1);
       &.stack-overflow{
-        height: 35px;
+        height: 30px;
       }
       &.git-hub{
-        height: 43px;
+        height: 39px;
+      }
+      &.linked-in{
+        height: 25px;
       }
     }
   }
@@ -107,11 +104,14 @@ class HomeContainer extends Component {
               <p>ReactJs, AngularJs, Sass/Scss, Less</p>
             </div>
             <div className="public-links">
-              <a href="https://stackoverflow.com/users/5542538/syam-pillai" target="_blank">
-                <img className="stack-overflow" src={GlobalImages.stackOverflow} alt="" />
+              <a href="https://stackoverflow.com/users/5542538/syam-pillai" rel="noopener" target="_blank">
+                <img className="stack-overflow" src={GlobalImages.stackOverflow} alt="stackOverflow link" />
               </a>
-              <a href="https://github.com/syam1123" target="_blank">
-                <img className="git-hub" src={GlobalImages.gitHub} alt="" />
+              <a href="https://github.com/syam1123" rel="noopener" target="_blank">
+                <img className="git-hub" src={GlobalImages.gitHub} alt="github link" />
+              </a>
+              <a href="https://www.linkedin.com/in/syamspillai/" rel="noopener" target="_blank">
+                <img className="linked-in" src={GlobalImages.linkedin} alt="github link" />
               </a>
             </div>
           </div>

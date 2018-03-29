@@ -58,16 +58,16 @@ const basicSkills = [
     "heading": "Other skills & interests",
     "tools": [
       {
-        "name": "Sass/Scss",
+        "name": "Sass/Scss/Less",
         "percentage": "90%"
       },
       {
-        "name": "Less",
-        "percentage": "90%"
+        "name": "React-redux",
+        "percentage": "75%"
       },
       {
         "name": "CSS animations",
-        "percentage": "80%"
+        "percentage": "75%"
       }
     ]
   }
