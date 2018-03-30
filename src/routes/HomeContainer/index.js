@@ -18,7 +18,7 @@ const MainPageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--cobalt);
+  background-color: var(--primary-color);
 `
 
 const TopLogoContainer = styled.div`

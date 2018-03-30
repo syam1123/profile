@@ -1,7 +1,7 @@
 {
   "short_name": "Syam",
   "name": "Syam Sadasivan Pillai",
-  "start_url": "https://syam-pillai.firebaseapp.com/",
+  "start_url": "https://syamsp.com/",
   "icons": [{
       "src": "https://firebasestorage.googleapis.com/v0/b/syam-pillai.appspot.com/o/profile%2Fdemo_icons%2Fsyam_icon_144.png?alt=media&token=cb138e76-a6c3-4a5c-a36e-868c4c75d0ae",
       "sizes": "144x144",
@@ -20,8 +20,8 @@
       "sizes": "512x512",
       "type": "image/png"
     }],
-  "background_color": "#0a385c",
-  "theme_color": "#0a385c",
+  "background_color": "#4009a0",
+  "theme_color": "#4009a0",
   "display": "standalone",
   "orientation": "portrait"
 }

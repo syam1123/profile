@@ -5,7 +5,9 @@ const GlobalImages = {
   gitHub: require('./images/github.png'),
   linkedin: require('./images/linkedin.png'),
   thinking: require('./images/thinking.png'),
-  PageNotAvailable: require('./images/pageNotAvailable.png')
+  PageNotAvailable: require('./images/pageNotAvailable.png'),
+  lighthouseDesktop: require('./images/lighthouse_desktop.png'),
+  lightHouseMobile: require('./images/lighthouse_mobile.png')
 }
 
 export default GlobalImages;

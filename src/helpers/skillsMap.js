@@ -66,7 +66,7 @@ const basicSkills = [
         "percentage": "75%"
       },
       {
-        "name": "CSS animations",
+        "name": "Progressive Web Apps",
         "percentage": "75%"
       }
     ]

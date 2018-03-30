@@ -9,7 +9,7 @@ const propTypes = {}
 const defaultProps = {}
 
 const NavBarContainer = styled.div`
-  position: absolute;
+  position: fixed;
   height: 50px;
   width: 100vw;
   top: 0;
@@ -37,6 +37,9 @@ const NavBarContainer = styled.div`
     .vision{
       border-bottom: 1px solid var(--dark-grey);
     }
+  }
+  @media screen and (max-width: 500px){
+    box-shadow: 0px 0px 5px 1px #d5d5d5;
   }
 `
 
@@ -121,6 +124,10 @@ class TopNavBar extends Component{
         history.push(ProfileRoutes.VISION_ROUTE);
         this.setState({pathsTravelled: pathsTravelled+1});
         break;
+      case 2:
+        history.push(ProfileRoutes.TECH_ROUTE);
+        this.setState({pathsTravelled: pathsTravelled+1});
+        break;
       default:
         history.push('/404');
         this.setState({pathsTravelled: pathsTravelled+1});
@@ -141,6 +148,7 @@ class TopNavBar extends Component{
           <LeftNavs className="nav-links">
             <span className="home" onClick={() => this.proceedTo(0)}>Home</span>
             <span className="skills" onClick={() => this.proceedTo(1)}>Skills</span>
+            <span className="tech" onClick={() => this.proceedTo(3)}>Tech</span>
           </LeftNavs>
           <RightNavs className="nav-links">
             <span className="vision" onClick={() => this.proceedTo(2)}>Vision</span>
