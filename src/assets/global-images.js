@@ -9,7 +9,8 @@ const GlobalImages = {
   lighthouseDesktop: require('./images/lighthouse_desktop.png'),
   lightHouseMobile: require('./images/lighthouse_mobile.png'),
   lighthouseLogo: require('./images/pwa-lighthouse.png'),
-  addToHomeScreen: require('./images/add_to_homescreen.png')
+  addToHomeScreen: require('./images/add_to_homescreen.png'),
+  swServiceWorker: require('./images/serviceworker-lifecycle.png')
 }
 
 export default GlobalImages;
