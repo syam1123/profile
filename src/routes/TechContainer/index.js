@@ -22,7 +22,7 @@ const TechHeading = styled.h1`
   font-size: 2em;
   color: var(--dark-gray);
   display: inline-block;
-  border-bottom: 2px solid var(--light-gray);
+  border-bottom: 2px solid var(--gray);
   @media screen and (max-width: 740px) {
     font-size: 1.7em;
   }
@@ -35,7 +35,7 @@ const HeadTagline = styled.p`
 const SubHeading = styled.p`
   font-weight: 400;
   font-size: 1.2em;
-  border-bottom: 1px solid var(--gray);
+  border-bottom: 1px solid var(--light-gray);
   display: inline-block;
 `
 
