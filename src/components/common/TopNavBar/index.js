@@ -14,8 +14,10 @@ const NavBarContainer = styled.div`
   width: 100vw;
   top: 0;
   box-shadow: 0px 0px 10px 1px #f5f5f5;
+  background: var(--white);
   &.home-active{
     box-shadow: none;
+    background: var(--primary-color);
     .nav-links{
       span{
         color: white;
@@ -124,7 +126,7 @@ class TopNavBar extends Component{
         history.push(ProfileRoutes.VISION_ROUTE);
         this.setState({pathsTravelled: pathsTravelled+1});
         break;
-      case 2:
+      case 3:
         history.push(ProfileRoutes.TECH_ROUTE);
         this.setState({pathsTravelled: pathsTravelled+1});
         break;
