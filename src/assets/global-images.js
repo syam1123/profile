@@ -6,8 +6,8 @@ const GlobalImages = {
   linkedin: require('./images/linkedin.png'),
   thinking: require('./images/thinking.png'),
   PageNotAvailable: require('./images/pageNotAvailable.png'),
-  lighthouseDesktop: require('./images/lighthouse_desktop.png'),
-  lightHouseMobile: require('./images/lighthouse_mobile.png'),
+  lighthouseDesktop: require('./images/lighthouse_desktop_new.png.png'),
+  lightHouseMobile: require('./images/lighthouse_mobile_new.png.png'),
   lighthouseLogo: require('./images/pwa-lighthouse.png'),
   addToHomeScreen: require('./images/add_to_homescreen.png'),
   swServiceWorker: require('./images/serviceworker-lifecycle.png')
