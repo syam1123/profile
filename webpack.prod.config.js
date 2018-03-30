@@ -100,6 +100,8 @@ module.exports = {
       caches: {
         main: [
           'vendor.*.js',
+          '*.js',
+          '**.*.js',
           '*.png',
           '*.otf'
         ]
