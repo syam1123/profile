@@ -34,6 +34,11 @@ const TechContainer = Loadable({
   loading: Loader
 })
 
+const ContactContainer = Loadable({
+  loader: () => import('./ContactContainer' /* webpackChunkName: 'contact' */),
+  loading: Loader
+})
+
 const PageNotAvailable = Loadable({
   loader: () => import('./PageNotAvailable' /* webpackChunkName: 'page404' */),
   loading: Loader
@@ -47,6 +52,7 @@ const AppRoutes = () => (
         <Route  path={ProfileRoutes.SKILLS_ROUTE} component={SkillsContainer} />
         <Route  path={ProfileRoutes.VISION_ROUTE} component={VisionContainer} />
         <Route  path={ProfileRoutes.TECH_ROUTE} component={TechContainer} />
+        <Route  path={ProfileRoutes.CONTACT_ROUTE} component={ContactContainer} />
 
 
         <Route path='/404' component={PageNotAvailable} />

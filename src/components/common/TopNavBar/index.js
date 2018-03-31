@@ -40,6 +40,16 @@ const NavBarContainer = styled.div`
       border-bottom: 1px solid var(--dark-grey);
     }
   }
+  &.tech-active{
+    .tech{
+      border-bottom: 1px solid var(--dark-grey);
+    }
+  }
+  &.contact-active{
+    .contact{
+      border-bottom: 1px solid var(--dark-grey);
+    }
+  }
   @media screen and (max-width: 500px){
     box-shadow: 0px 0px 5px 1px #d5d5d5;
   }
@@ -105,6 +115,10 @@ class TopNavBar extends Component{
         return 'skills-active'
       case ProfileRoutes.VISION_ROUTE:
         return 'vision-active'
+      case ProfileRoutes.TECH_ROUTE:
+        return 'tech-active'
+      case ProfileRoutes.CONTACT_ROUTE:
+        return 'contact-active'
       default:
         return ''
     }
@@ -123,11 +137,15 @@ class TopNavBar extends Component{
         this.setState({pathsTravelled: pathsTravelled+1});
         break;
       case 2:
-        history.push(ProfileRoutes.VISION_ROUTE);
+        history.push(ProfileRoutes.TECH_ROUTE);
         this.setState({pathsTravelled: pathsTravelled+1});
         break;
       case 3:
-        history.push(ProfileRoutes.TECH_ROUTE);
+        history.push(ProfileRoutes.CONTACT_ROUTE);
+        this.setState({pathsTravelled: pathsTravelled+1});
+        break;
+      case 4:
+        history.push(ProfileRoutes.VISION_ROUTE);
         this.setState({pathsTravelled: pathsTravelled+1});
         break;
       default:
@@ -150,10 +168,11 @@ class TopNavBar extends Component{
           <LeftNavs className="nav-links">
             <span className="home" onClick={() => this.proceedTo(0)}>Home</span>
             <span className="skills" onClick={() => this.proceedTo(1)}>Skills</span>
-            <span className="tech" onClick={() => this.proceedTo(3)}>Tech</span>
+          <span className="tech" onClick={() => this.proceedTo(2)}>Tech</span>
           </LeftNavs>
           <RightNavs className="nav-links">
-            <span className="vision" onClick={() => this.proceedTo(2)}>Vision</span>
+            <span className="contact" onClick={() => this.proceedTo(3)}>Contact</span>
+            <span className="vision" onClick={() => this.proceedTo(4)}>Vision</span>
           </RightNavs>
         </NavSection>
       </NavBarContainer>
