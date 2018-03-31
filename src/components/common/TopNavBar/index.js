@@ -52,7 +52,6 @@ const NavBarContainer = styled.div`
   }
   @media screen and (max-width: 500px){
     box-shadow: 0px 0px 5px 1px #d5d5d5;
-    width: 91%;
   }
   @media screen and (max-width: 345px) {
     .vision{
@@ -86,6 +85,9 @@ const NavSection = styled.div`
       }
     }
   }
+    @media screen and (max-width: 500px){
+      width: 91%;
+    }
 `
 
 const LogoImage = styled.img`

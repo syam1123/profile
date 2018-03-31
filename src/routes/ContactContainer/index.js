@@ -113,8 +113,8 @@ class ContactContainer extends Component {
     return(
       <ContactSection>
         <Contactheading>Contact Syam</Contactheading>
-        <Paragraph>I, Syam Sadasivan Pillai is a passionate Front-end engineer based in Bangalore, India. I was born and bought up in the God's own country, Kerala. Completed my B.Tech in Computer Science and Technology from College Of Engineering, Chengannur (CUSAT University). I have moved to Bangalore after graduation in seeks of more opportunities.</Paragraph>
-        <Paragraph>I chose my path to the career as a front-end engineer from college days itself. Freelance works on front-end development was a source of pocket money in college. Then I fell in love with front-end technology, especially with CSS. Then I learned javascript with the help of <a href="http://shop.oreilly.com/product/9780596517748.do" target="_blank" rel="noopener">JavaScript: The Good Parts</a> by O'Reilly. It was the best read about Javascript I ever read, It made me love the taste of Javascript. </Paragraph>
+        <Paragraph>I am a passionate front-end engineer based in Bangalore, India. I was born and brought up in God's own country, Kerala. I completed my B.Tech in Computer Science and Engineering from College Of Engineering, Chengannur (CUSAT University). I moved to Bangalore after graduation seeking exciting opportunities to prove my mettle.</Paragraph>
+      <Paragraph>I chose the path for my career as a front-end engineer from college days itself. Freelance works on front-end development was a source of pocket money in college. Then I fell in love with front-end technology, especially with CSS. Then I learned javascript with the help of <a href="http://shop.oreilly.com/product/9780596517748.do" target="_blank" rel="noopener">JavaScript: The Good Parts</a>  by O'Reilly. It’s the best book about Javascript I have ever read. It made me love the taste of Javascript. So here I am, adding life to web pages!! </Paragraph>
         <ContactDetailsSection>
           <ImageContainer>
             <ProfileImage/>
