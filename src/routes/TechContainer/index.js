@@ -143,6 +143,7 @@ class TechContainer extends Component {
         <SubHeading>Other techonologies used</SubHeading>
         <List>
           <ListElement>ReactJs</ListElement>
+          <ListElement>ES6</ListElement>
           <ListElement>Styled Components</ListElement>
           <ListElement>Webpack</ListElement>
           <ListElement>Firebase</ListElement>

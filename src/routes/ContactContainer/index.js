@@ -113,8 +113,8 @@ class ContactContainer extends Component {
     return(
       <ContactSection>
         <Contactheading>Contact Syam</Contactheading>
-        <Paragraph>Syam Sadasivan Pillai is a passionate Front-end engineer based in Bangalore, India. He was born and bought up in the God's own country, Kerala. Completed his B.Tech in Computer Science and Technology from College Of Engineering, Chengannur (CUSAT University). He has moved to Bangalore after graduation.</Paragraph>
-        <Paragraph>He chose his path to his career as a front-end engineer from college days itself. Freelance works on front-end development started as a source of pocket money in college. Then he fell in love with front-end technology, especially with CSS. Then he learned javascript with the help of <a href="http://shop.oreilly.com/product/9780596517748.do" target="_blank" rel="noopener">JavaScript: The Good Parts</a> by O'Reilly. He loved the taste of Javascript. </Paragraph>
+        <Paragraph>I, Syam Sadasivan Pillai is a passionate Front-end engineer based in Bangalore, India. I was born and bought up in the God's own country, Kerala. Completed my B.Tech in Computer Science and Technology from College Of Engineering, Chengannur (CUSAT University). I have moved to Bangalore after graduation in seeks of more opportunities.</Paragraph>
+        <Paragraph>I chose my path to the career as a front-end engineer from college days itself. Freelance works on front-end development was a source of pocket money in college. Then I fell in love with front-end technology, especially with CSS. Then I learned javascript with the help of <a href="http://shop.oreilly.com/product/9780596517748.do" target="_blank" rel="noopener">JavaScript: The Good Parts</a> by O'Reilly. It was the best read about Javascript I ever read, It made me love the taste of Javascript. </Paragraph>
         <ContactDetailsSection>
           <ImageContainer>
             <ProfileImage/>
@@ -126,11 +126,17 @@ class ContactContainer extends Component {
             <Paragraph>syam.sp0965@gmail.com</Paragraph>
             <Divider />
             <span>GitHub</span>
-            <Paragraph>https://github.com/syam1123</Paragraph>
+            <Paragraph>
+              <a href="https://github.com/syam1123" rel="noopener" target="_blank">https://github.com/syam1123</a>
+            </Paragraph>
             <span>StackOverflow</span>
-            <Paragraph>https://stackoverflow.com/users/5542538/syam-pillai</Paragraph>
+            <Paragraph>
+              <a href="https://stackoverflow.com/users/5542538/syam-pillai" rel="noopener" target="_blank">https://stackoverflow.com/users/5542538/syam-pillai</a>
+            </Paragraph>
             <span>LinkedIn</span>
-            <Paragraph>https://www.linkedin.com/in/syamspillai/</Paragraph>
+            <Paragraph>
+              <a href="https://www.linkedin.com/in/syamspillai/" rel="noopener" target="_blank">https://www.linkedin.com/in/syamspillai/</a>
+            </Paragraph>
           </ContactDetails>
         </ContactDetailsSection>
       </ContactSection>
