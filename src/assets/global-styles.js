@@ -13,6 +13,7 @@ injectGlobal`
     font-style: normal;
     font-weight: 600;
     src: url(${AvenirHeavy}) format('opentype');
+    font-display: block;
   }
 
   @font-face {
@@ -20,6 +21,7 @@ injectGlobal`
     font-style: normal;
     font-weight: 400;
     src: url(${AvenirRegular}) format('opentype');
+    font-display: block;
   }
 
   @font-face {
@@ -27,6 +29,7 @@ injectGlobal`
     font-style: normal;
     font-weight: 300;
     src: url(${AvenirLight}) format('opentype');
+    font-display: block;
   }
 
   :root {
