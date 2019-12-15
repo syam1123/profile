@@ -5,6 +5,10 @@ const basicSkills = [
       {
         "name": "Javascript",
         "percentage": "85%"
+      },,
+      {
+        "name": "Typescript",
+        "percentage": "40%"
       },
       {
         "name": "CSS3",
@@ -24,12 +28,8 @@ const basicSkills = [
         "percentage": "85%"
       },
       {
-        "name": "AngularJs - v1",
-        "percentage": "90%"
-      },
-      {
-        "name": "AngularJs - v5",
-        "percentage": "25%"
+        "name": "VueJs, NuxtJs",
+        "percentage": "85%"
       },
       {
         "name": "jQuery",
@@ -45,7 +45,7 @@ const basicSkills = [
         "percentage": "30%"
       },
       {
-        "name": "Chai",
+        "name": "Jest",
         "percentage": "30%"
       },
       {
@@ -67,13 +67,17 @@ const basicSkills = [
       },
       {
         "name": "Progressive Web Apps",
-        "percentage": "75%"
+        "percentage": "85%"
       }
     ]
   }
 ]
 
 const otherInterests = [
+  {
+    "skill": 'Web Security',
+    "link": ''
+  },
   {
     "skill": 'CSS flex-box',
     "link": 'http://flexboxfroggy.com/'

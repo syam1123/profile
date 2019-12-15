@@ -114,14 +114,14 @@ class ContactContainer extends Component {
       <ContactSection>
         <Contactheading>Contact Syam</Contactheading>
         <Paragraph>I am a passionate front-end engineer based in Bangalore, India. I was born and brought up in God's own country, Kerala. I completed my B.Tech in Computer Science and Engineering from College Of Engineering, Chengannur (CUSAT University). I moved to Bangalore after graduation seeking exciting opportunities to prove my mettle.</Paragraph>
-      <Paragraph>I chose the path for my career as a front-end engineer from college days itself. Freelance works on front-end development was a source of pocket money in college. Then I fell in love with front-end technology, especially with CSS. Then I learned javascript with the help of <a href="http://shop.oreilly.com/product/9780596517748.do" target="_blank" rel="noopener">JavaScript: The Good Parts</a>  by O'Reilly. It’s the best book about Javascript I have ever read. It made me love the taste of Javascript. So here I am, adding life to web pages!! </Paragraph>
+        <Paragraph>I chose the path for my career as a front-end engineer from college days itself. Freelance works on front-end development was a source of pocket money in college. Then I fell in love with front-end technology, especially with CSS. Then I learned javascript with the help of <a href="http://shop.oreilly.com/product/9780596517748.do" target="_blank" rel="noopener">JavaScript: The Good Parts</a>  by O'Reilly. It’s the best book about Javascript I have ever read. It made me love the taste of Javascript. So here I am, adding life to web pages!! </Paragraph>
         <ContactDetailsSection>
           <ImageContainer>
             <ProfileImage/>
           </ImageContainer>
           <ContactDetails>
             <span>If urgent, contact on:</span>
-            <Paragraph>+91 9048 4864 83</Paragraph>
+            <Paragraph>+49 1590 1534339</Paragraph>
             <span>Send an email to:</span>
             <Paragraph>syam.sp0965@gmail.com</Paragraph>
             <Divider />
