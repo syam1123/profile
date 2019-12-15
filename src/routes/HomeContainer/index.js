@@ -101,7 +101,7 @@ class HomeContainer extends Component {
             <div className="additional-details">
               <p>B.tech in Computer Science and Engineering</p>
               <p>HTML, CSS3, Javascript</p>
-              <p>ReactJs, AngularJs, Sass/Scss, Less</p>
+              <p>ReactJs, VueJs, GraphQl, Sass/Scss, Less</p>
             </div>
             <div className="public-links">
               <a href="https://stackoverflow.com/users/5542538/syam-pillai" rel="noopener" target="_blank">
