@@ -112,8 +112,8 @@ class ContactContainer extends Component {
   render () {
     return(
       <ContactSection>
-        <Contactheading>Contact Syam</Contactheading>
-        <Paragraph>I am a passionate front-end engineer based in Bangalore, India. I was born and brought up in God's own country, Kerala. I completed my B.Tech in Computer Science and Engineering from College Of Engineering, Chengannur (CUSAT University). I moved to Bangalore after graduation seeking exciting opportunities to prove my mettle.</Paragraph>
+        <Contactheading>Contact</Contactheading>
+        <Paragraph>I am a passionate front-end engineer based in Düsseldorf, Germany. I was born and brought up in Kerala, India. I completed my B.Tech in Computer Science and Engineering from CUSAT University. I moved to Bangalore after graduation seeking exciting opportunities to prove my mettle.</Paragraph>
         <Paragraph>I chose the path for my career as a front-end engineer from college days itself. Freelance works on front-end development was a source of pocket money in college. Then I fell in love with front-end technology, especially with CSS. Then I learned javascript with the help of <a href="http://shop.oreilly.com/product/9780596517748.do" target="_blank" rel="noopener">JavaScript: The Good Parts</a>  by O'Reilly. It’s the best book about Javascript I have ever read. It made me love the taste of Javascript. So here I am, adding life to web pages!! </Paragraph>
         <ContactDetailsSection>
           <ImageContainer>

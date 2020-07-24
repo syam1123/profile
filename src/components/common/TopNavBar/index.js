@@ -176,7 +176,7 @@ class TopNavBar extends Component{
           <LeftNavs className="nav-links">
             <span className="home" onClick={() => this.proceedTo(0)}>Home</span>
             <span className="skills" onClick={() => this.proceedTo(1)}>Skills</span>
-          <span className="tech" onClick={() => this.proceedTo(2)}>Tech</span>
+          {/* <span className="tech" onClick={() => this.proceedTo(2)}>Tech</span> */}
           </LeftNavs>
           <RightNavs className="nav-links">
             <span className="contact" onClick={() => this.proceedTo(3)}>Contact</span>
