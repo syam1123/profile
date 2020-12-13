@@ -41,6 +41,10 @@ const Paragraph = styled.p`
     font-weight: 400;
     text-decoration: none;
     border-bottom: 1px solid;
+
+    &.no-anchor {
+      border-bottom: none;
+    }
   }
 `
 
@@ -132,9 +136,27 @@ class ContactContainer extends Component {
           </ImageContainer>
           <ContactDetails>
             <span>Instagram:</span>
-            <Paragraph>@syam__pillai</Paragraph>
+            <Paragraph>
+              <a
+                href="https://www.instagram.com/syam__pillai/"
+                rel="noopener"
+                target="_blank"
+                className="no-anchor"
+              >
+                @syam__pillai
+              </a>
+            </Paragraph>
             <span>Email:</span>
-            <Paragraph>hello@syamsp.com</Paragraph>
+            <Paragraph>
+              <a
+                href="mailto:hello@syamsp.com"
+                target="_blank"
+                rel="noopener"
+                className="no-anchor"
+              >
+                hello@syamsp.com
+              </a>
+            </Paragraph>
             <Divider />
             <span>GitHub</span>
             <Paragraph>
