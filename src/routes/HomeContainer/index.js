@@ -1,15 +1,11 @@
-import React, {Component} from "react";
-import styled, { css } from 'styled-components';
+import React, { Component } from 'react'
+import styled, { css } from 'styled-components'
 
-import GlobalImages from '../../assets/global-images';
+import GlobalImages from '../../assets/global-images'
 
-const propTypes = {
+const propTypes = {}
 
-}
-
-const defaultProps = {
-
-}
+const defaultProps = {}
 
 const MainPageContainer = styled.div`
   width: 100vw;
@@ -22,7 +18,7 @@ const MainPageContainer = styled.div`
 `
 
 const TopLogoContainer = styled.div`
-  img{
+  img {
     filter: brightness(0) invert(100%);
   }
 `
@@ -33,42 +29,42 @@ const BottomContent = styled.div`
     text-align: center;
     color: white;
     padding-top: 2em;
-    h2{
+    h2 {
       font-size: 2em;
       margin-bottom: 0px;
       letter-spacing: 1px;
       font-weight: 400;
     }
-    .designation{
+    .designation {
       margin-bottom: 2em;
-      margin-top: .5em;
+      margin-top: 0.5em;
       color: var(--silver);
       font-weight: 300;
     }
-    .additional-details{
+    .additional-details {
       color: var(--silver);
       font-family: lato;
-      p{
+      p {
         margin: 5px 2px;
-        font-size: .9em;
+        font-size: 0.9em;
         font-weight: 300;
       }
     }
   }
-  .public-links{
+  .public-links {
     margin-top: 1em;
-    a{
-      margin: 1em .2em;
+    a {
+      margin: 1em 0.2em;
     }
-    img{
+    img {
       filter: brightness(0) invert(1);
-      &.stack-overflow{
+      &.stack-overflow {
         height: 30px;
       }
-      &.git-hub{
+      &.git-hub {
         height: 39px;
       }
-      &.linked-in{
+      &.linked-in {
         height: 25px;
       }
     }
@@ -76,17 +72,16 @@ const BottomContent = styled.div`
 `
 
 class HomeContainer extends Component {
-
-  constructor () {
-    super ();
-    this.state = {"pageLoaded": false};
+  constructor() {
+    super()
+    this.state = { pageLoaded: false }
   }
 
   componentDidMount() {
-    this.setState({"pageLoaded": true})
+    this.setState({ pageLoaded: true })
   }
 
-  render () {
+  render() {
     return (
       <MainPageContainer>
         <TopLogoContainer className={this.state.pageLoaded}>
@@ -95,23 +90,45 @@ class HomeContainer extends Component {
         <BottomContent>
           <div className="primary-details">
             <h2>Syam Sadasivan Pillai</h2>
-            <p className="designation">
-              Front-end developer
-            </p>
+            <p className="designation">Front-end Engineer/Consultant</p>
             <div className="additional-details">
               <p>B.tech in Computer Science and Engineering</p>
               <p>HTML, CSS3, Javascript</p>
-              <p>ReactJs, VueJs, GraphQl, Sass/Scss, Less</p>
+              <p>ReactJs, VueJs, GraphQl, Svelte</p>
             </div>
             <div className="public-links">
-              <a href="https://stackoverflow.com/users/5542538/syam-pillai" rel="noopener" target="_blank">
-                <img className="stack-overflow" src={GlobalImages.stackOverflow} alt="stackOverflow link" />
+              <a
+                href="https://stackoverflow.com/users/5542538/syam-pillai"
+                rel="noopener"
+                target="_blank"
+              >
+                <img
+                  className="stack-overflow"
+                  src={GlobalImages.stackOverflow}
+                  alt="stackOverflow link"
+                />
               </a>
-              <a href="https://github.com/syam1123" rel="noopener" target="_blank">
-                <img className="git-hub" src={GlobalImages.gitHub} alt="github link" />
+              <a
+                href="https://github.com/syam1123"
+                rel="noopener"
+                target="_blank"
+              >
+                <img
+                  className="git-hub"
+                  src={GlobalImages.gitHub}
+                  alt="github link"
+                />
               </a>
-              <a href="https://www.linkedin.com/in/syamspillai/" rel="noopener" target="_blank">
-                <img className="linked-in" src={GlobalImages.linkedin} alt="github link" />
+              <a
+                href="https://www.linkedin.com/in/syamspillai/"
+                rel="noopener"
+                target="_blank"
+              >
+                <img
+                  className="linked-in"
+                  src={GlobalImages.linkedin}
+                  alt="github link"
+                />
               </a>
             </div>
           </div>
@@ -121,7 +138,7 @@ class HomeContainer extends Component {
   }
 }
 
-HomeContainer.propTypes = propTypes;
-HomeContainer.defaultProps = defaultProps;
+HomeContainer.propTypes = propTypes
+HomeContainer.defaultProps = defaultProps
 
-export default HomeContainer;
+export default HomeContainer

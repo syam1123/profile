@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import styled, { css } from "styled-components";
-import PropTypes from "prop-types";
+import React, { Component } from 'react'
+import styled, { css } from 'styled-components'
+import PropTypes from 'prop-types'
 
-import { GlobalImages } from "assets";
+import { GlobalImages } from 'assets'
 
 const propTypes = {}
 const defaultProps = {}
@@ -24,7 +24,7 @@ const Contactheading = styled.h1`
   color: var(--dark-gray);
   display: inline-block;
   border-bottom: 2px solid var(--gray);
-  @media screen and (max-width: 740px){
+  @media screen and (max-width: 740px) {
     font-size: 1.7em;
   }
 `
@@ -36,7 +36,7 @@ const Paragraph = styled.p`
   font-weight: 300;
   line-height: 1.4em;
   letter-spacing: -0.1px;
-  a{
+  a {
     color: var(--cobalt);
     font-weight: 400;
     text-decoration: none;
@@ -49,7 +49,7 @@ const ContactDetailsSection = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-top: 3em;
-  @media screen and (max-width: 750px){
+  @media screen and (max-width: 750px) {
     flex-direction: column;
   }
 `
@@ -60,7 +60,7 @@ const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 750px){
+  @media screen and (max-width: 750px) {
     margin-bottom: 3em;
     padding-right: 0em;
   }
@@ -74,7 +74,7 @@ const ProfileImage = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   border: 7px solid black;
-  @media screen and (max-width: 750px){
+  @media screen and (max-width: 750px) {
     width: 200px;
     height: 200px;
   }
@@ -84,16 +84,16 @@ const ContactDetails = styled.div`
   padding-left: 1em;
   flex: 1;
   border-left: 1px solid var(--silver);
-  span{
-    font-size: .9em;
+  span {
+    font-size: 0.9em;
     color: var(--gray);
   }
-  p{
+  p {
     font-size: 1.1em;
     color: var(--cobalt);
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
-  @media screen and (max-width: 750px){
+  @media screen and (max-width: 750px) {
     border-left: none;
     padding-left: 0em;
   }
@@ -103,48 +103,77 @@ const Divider = styled.div`
   max-width: 300px;
   border-bottom: 1px solid var(--silver);
   margin: 1em 0em;
-  @media screen and (max-width: 750px){
+  @media screen and (max-width: 750px) {
     width: 100%;
   }
 `
 
 class ContactContainer extends Component {
-  render () {
-    return(
+  render() {
+    return (
       <ContactSection>
         <Contactheading>Contact</Contactheading>
-        <Paragraph>I am a passionate front-end engineer based in Düsseldorf, Germany. I was born and brought up in Kerala, India. I completed my B.Tech in Computer Science and Engineering from CUSAT University. I moved to Bangalore after graduation seeking exciting opportunities to prove my mettle.</Paragraph>
-        <Paragraph>I chose the path for my career as a front-end engineer from college days itself. Freelance works on front-end development was a source of pocket money in college. Then I fell in love with front-end technology, especially with CSS. Then I learned javascript with the help of <a href="http://shop.oreilly.com/product/9780596517748.do" target="_blank" rel="noopener">JavaScript: The Good Parts</a>  by O'Reilly. It’s the best book about Javascript I have ever read. It made me love the taste of Javascript. So here I am, adding life to web pages!! </Paragraph>
+        <Paragraph>
+          I am a passionate front-end engineer based in Düsseldorf, Germany. I
+          was born and brought up in Kerala, India. I completed my B.Tech in
+          Computer Science and Engineering from CUSAT University.
+        </Paragraph>
+        <Paragraph>
+          Love for CSS and javascript started in the early years of University
+          life. Freelance web development was one of my major source of pocket
+          money during college days and it has soon become my favorite part in
+          the software development process. I am currently working as Sr.
+          Frontend Engineer at trivago N.V. and also working as a freelance
+          reactJs and CSS consultant.
+        </Paragraph>
         <ContactDetailsSection>
           <ImageContainer>
-            <ProfileImage/>
+            <ProfileImage />
           </ImageContainer>
           <ContactDetails>
-            <span>If urgent, contact on:</span>
-            <Paragraph>+49 1590 1534339</Paragraph>
-            <span>Send an email to:</span>
-            <Paragraph>syam.sp0965@gmail.com</Paragraph>
+            <span>Instagram:</span>
+            <Paragraph>@syam__pillai</Paragraph>
+            <span>Email:</span>
+            <Paragraph>hello@syamsp.com</Paragraph>
             <Divider />
             <span>GitHub</span>
             <Paragraph>
-              <a href="https://github.com/syam1123" rel="noopener" target="_blank">https://github.com/syam1123</a>
+              <a
+                href="https://github.com/syam1123"
+                rel="noopener"
+                target="_blank"
+              >
+                https://github.com/syam1123
+              </a>
             </Paragraph>
             <span>StackOverflow</span>
             <Paragraph>
-              <a href="https://stackoverflow.com/users/5542538/syam-pillai" rel="noopener" target="_blank">https://stackoverflow.com/users/5542538/syam-pillai</a>
+              <a
+                href="https://stackoverflow.com/users/5542538/syam-pillai"
+                rel="noopener"
+                target="_blank"
+              >
+                https://stackoverflow.com/users/5542538/syam-pillai
+              </a>
             </Paragraph>
             <span>LinkedIn</span>
             <Paragraph>
-              <a href="https://www.linkedin.com/in/syamspillai/" rel="noopener" target="_blank">https://www.linkedin.com/in/syamspillai/</a>
+              <a
+                href="https://www.linkedin.com/in/syamspillai/"
+                rel="noopener"
+                target="_blank"
+              >
+                https://www.linkedin.com/in/syamspillai/
+              </a>
             </Paragraph>
           </ContactDetails>
         </ContactDetailsSection>
       </ContactSection>
-    );
+    )
   }
 }
 
-ContactContainer.propTypes = propTypes;
-ContactContainer.defaultProps = defaultProps;
+ContactContainer.propTypes = propTypes
+ContactContainer.defaultProps = defaultProps
 
-export default ContactContainer;
+export default ContactContainer

@@ -1,140 +1,150 @@
 const basicSkills = [
   {
-    "heading": "Languages & Stylesheets: UI side",
-    "tools": [
+    heading: 'Languages & Stylesheets: UI side',
+    tools: [
       {
-        "name": "Javascript",
-        "percentage": "85%"
-      },,
+        name: 'Javascript',
+        percentage: '90%',
+      },
+      ,
       {
-        "name": "Typescript",
-        "percentage": "40%"
+        name: 'Typescript',
+        percentage: '70%',
       },
       {
-        "name": "CSS3",
-        "percentage": "90%"
+        name: 'CSS3',
+        percentage: '90%',
       },
       {
-        "name": "HTML5",
-        "percentage": "85%"
-      }
-    ]
+        name: 'HTML5',
+        percentage: '90%',
+      },
+    ],
   },
   {
-    "heading": "Frameworks & Libraries: Javascript",
-    "tools": [
+    heading: 'Frameworks & Libraries: Javascript',
+    tools: [
       {
-        "name": "ReactJs",
-        "percentage": "85%"
+        name: 'ReactJs',
+        percentage: '85%',
       },
       {
-        "name": "VueJs, NuxtJs",
-        "percentage": "85%"
+        name: 'VueJs, NuxtJs',
+        percentage: '85%',
       },
       {
-        "name": "jQuery",
-        "percentage": "80%"
-      }
-    ]
+        name: 'jQuery',
+        percentage: '80%',
+      },
+      {
+        name: 'Svelte',
+        percentage: '60%',
+      },
+      {
+        name: 'NodeJs',
+        percentage: '70%',
+      },
+    ],
   },
   {
-    "heading": "Testing: UI",
-    "tools": [
+    heading: 'Testing: UI',
+    tools: [
       {
-        "name": "Selenium & Webdriver",
-        "percentage": "30%"
+        name: 'Selenium & Webdriver',
+        percentage: '30%',
       },
       {
-        "name": "Jest",
-        "percentage": "30%"
+        name: 'Jest, Enzyme',
+        percentage: '80%',
       },
       {
-        "name": "Mocha",
-        "percentage": "30%"
-      }
-    ]
+        name: 'CypressJs',
+        percentage: '70%',
+      },
+    ],
   },
   {
-    "heading": "Other skills & interests",
-    "tools": [
+    heading: 'Other skills & interests',
+    tools: [
       {
-        "name": "Sass/Scss/Less",
-        "percentage": "90%"
+        name: 'Sass/Scss/Less',
+        percentage: '90%',
       },
       {
-        "name": "React-redux",
-        "percentage": "75%"
+        name: 'React-redux',
+        percentage: '90%',
       },
       {
-        "name": "Progressive Web Apps",
-        "percentage": "85%"
-      }
-    ]
-  }
+        name: 'Progressive Web Apps',
+        percentage: '90%',
+      },
+    ],
+  },
 ]
 
 const otherInterests = [
   {
-    "skill": 'Web Security',
-    "link": ''
+    skill: 'Web Security',
+    link: '',
   },
   {
-    "skill": 'CSS flex-box',
-    "link": 'http://flexboxfroggy.com/'
+    skill: 'CSS flex-box',
+    link: 'http://flexboxfroggy.com/',
   },
   {
-    "skill": 'CSS Grid',
-    "link": 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout'
+    skill: 'CSS Grid',
+    link: 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout',
   },
   {
-    "skill": 'Service worker',
-    "link": 'https://developers.google.com/web/fundamentals/primers/service-workers/'
+    skill: 'Service worker',
+    link:
+      'https://developers.google.com/web/fundamentals/primers/service-workers/',
   },
   {
-    "skill": 'CSS variables',
-    "link": ''
+    skill: 'CSS variables',
+    link: '',
   },
   {
-    "skill": 'styled components',
-    "link": ''
+    skill: 'styled components',
+    link: '',
   },
   {
-    "skill": 'styled components',
-    "link": ''
+    skill: 'styled components',
+    link: '',
   },
   {
-    "skill": 'Highcharts.js',
-    "link": 'https://www.highcharts.com/'
+    skill: 'Highcharts.js',
+    link: 'https://www.highcharts.com/',
   },
   {
-    "skill": 'd3.js',
-    "link": ''
+    skill: 'd3.js',
+    link: '',
   },
   {
-    "skill": 'Progressive Web Apps',
-    "link": 'https://developers.google.com/web/progressive-web-apps/'
+    skill: 'Progressive Web Apps',
+    link: 'https://developers.google.com/web/progressive-web-apps/',
   },
   {
-    "skill": 'Accelerated Mobile Pages',
-    "link": 'https://www.ampproject.org/'
+    skill: 'Accelerated Mobile Pages',
+    link: 'https://www.ampproject.org/',
   },
   {
-    "skill": 'React-redux',
-    "link": ''
+    skill: 'React-redux',
+    link: '',
   },
   {
-    "skill": 'Apollo-graphQl',
-    "link": 'http://api.githunt.com/graphiql'
+    skill: 'Apollo-graphQl',
+    link: 'http://api.githunt.com/graphiql',
   },
   {
-    "skill": 'HTTP2',
-    "link": 'https://http2.github.io/'
-  }
+    skill: 'HTTP2',
+    link: 'https://http2.github.io/',
+  },
 ]
 
 const skillsMap = {
   basicSkills,
-  otherInterests
+  otherInterests,
 }
 
-export default skillsMap;
+export default skillsMap
