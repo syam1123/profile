@@ -118,17 +118,19 @@ class ContactContainer extends Component {
       <ContactSection>
         <Contactheading>Contact</Contactheading>
         <Paragraph>
-          I am a passionate front-end engineer based in Düsseldorf, Germany. I
-          was born and brought up in Kerala, India. I completed my B.Tech in
-          Computer Science and Engineering from CUSAT University.
+          I am a passionate Engineer, who turned into Tech and People's manager
+          based in Düsseldorf, Germany. I am a start-up enthusiast and always
+          find myself excited for intellectual discussions on tech innovations
+          and small groups of highly talented humans (and AI) trying to achive
+          something that will enable the world to become a better place
         </Paragraph>
         <Paragraph>
           Love for CSS and javascript started in the early years of University
           life. Freelance web development was one of my major source of pocket
           money during college days and it has soon become my favorite part in
-          the software development process. I am currently working as Sr.
-          Frontend Engineer at trivago N.V. and also working as a freelance
-          reactJs and CSS consultant.
+          the software development process. I am currently working as the Head
+          of Engineering / Chief Technology officer at HeyPractice.com (Legal
+          name: PeterPitch GmbH), located in Wuppertal, Germany.
         </Paragraph>
         <ContactDetailsSection>
           <ImageContainer>

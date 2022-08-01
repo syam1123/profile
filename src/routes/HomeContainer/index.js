@@ -90,11 +90,13 @@ class HomeContainer extends Component {
         <BottomContent>
           <div className="primary-details">
             <h2>Syam Sadasivan Pillai</h2>
-            <p className="designation">Front-end Engineer/Consultant</p>
+            <p className="designation">
+              CTO | Engineer | Mangager | Consultant
+            </p>
             <div className="additional-details">
-              <p>B.tech in Computer Science and Engineering</p>
-              <p>HTML, CSS3, Javascript</p>
-              <p>ReactJs, VueJs, GraphQl, Svelte</p>
+              <p>Computer Science and Engineering</p>
+              <p>HTML, CSS3, Javascript, Typescript</p>
+              <p>ReactJs, VueJs, GraphQl, Svelte, NodeJs</p>
             </div>
             <div className="public-links">
               <a

@@ -40,7 +40,7 @@ injectGlobal`
     --dark-grey: #444444;
     --gray: #959595;
     --light-gray: #efefef;
-    --primary-color: #0c3fb0;
+    --primary-color: #0700db;
   }
 
   html,

@@ -9,7 +9,7 @@ const basicSkills = [
       ,
       {
         name: 'Typescript',
-        percentage: '70%',
+        percentage: '90%',
       },
       {
         name: 'CSS3',
@@ -26,11 +26,11 @@ const basicSkills = [
     tools: [
       {
         name: 'ReactJs',
-        percentage: '85%',
+        percentage: '95%',
       },
       {
         name: 'VueJs, NuxtJs',
-        percentage: '85%',
+        percentage: '90%',
       },
       {
         name: 'jQuery',
@@ -38,11 +38,11 @@ const basicSkills = [
       },
       {
         name: 'Svelte',
-        percentage: '60%',
+        percentage: '70%',
       },
       {
         name: 'NodeJs',
-        percentage: '70%',
+        percentage: '80%',
       },
     ],
   },
@@ -59,7 +59,7 @@ const basicSkills = [
       },
       {
         name: 'CypressJs',
-        percentage: '70%',
+        percentage: '80%',
       },
     ],
   },
@@ -88,8 +88,22 @@ const otherInterests = [
     link: '',
   },
   {
-    skill: 'CSS flex-box',
-    link: 'http://flexboxfroggy.com/',
+    skill: 'web3.0',
+    link: 'https://web3.foundation/about/',
+  },
+  {
+    skill: 'Apollo-graphQl',
+    link: 'http://api.githunt.com/graphiql',
+  },
+  {
+    skill: 'HTTP3',
+    link: 'https://en.wikipedia.org/wiki/HTTP/3',
+  },
+  {
+    skill: 'E-Learning',
+  },
+  {
+    skill: 'AI for speech recoginition',
   },
   {
     skill: 'CSS Grid',
@@ -97,15 +111,10 @@ const otherInterests = [
   },
   {
     skill: 'Service worker',
-    link:
-      'https://developers.google.com/web/fundamentals/primers/service-workers/',
+    link: 'https://developers.google.com/web/fundamentals/primers/service-workers/',
   },
   {
-    skill: 'CSS variables',
-    link: '',
-  },
-  {
-    skill: 'styled components',
+    skill: 'CSS modules',
     link: '',
   },
   {
@@ -131,14 +140,6 @@ const otherInterests = [
   {
     skill: 'React-redux',
     link: '',
-  },
-  {
-    skill: 'Apollo-graphQl',
-    link: 'http://api.githunt.com/graphiql',
-  },
-  {
-    skill: 'HTTP2',
-    link: 'https://http2.github.io/',
   },
 ]
 
